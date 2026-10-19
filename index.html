@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#2563eb">
+  <title>SpendWise — Spend with purpose</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#" data-page="landing"><span class="brand-mark">S</span><span>Spend<span class="brand-blue">Wise</span></span></a>
+    <nav id="mainNav" class="nav-links">
+      <button data-page="landing" class="nav-link active">Home</button>
+      <button data-page="dashboard" class="nav-link">Dashboard</button>
+      <button data-page="transactions" class="nav-link">Transactions</button>
+      <button data-page="budgets" class="nav-link">Budgets</button>
+      <button data-page="analytics" class="nav-link">Analytics</button>
+      <button data-page="reports" class="nav-link">Reports & settings</button>
+    </nav>
+    <div class="top-actions"><button id="navLogin" class="btn btn-quiet">Log in</button><button id="navSignup" class="btn btn-primary">Get started <span>↗</span></button><button id="mobileMenu" class="menu-button" aria-label="Toggle navigation">☰</button></div>
+  </header>
+
+  <main>
+    <section id="landingPage" class="page landing-page">
+      <div class="hero wrap">
+        <div class="hero-copy">
+          <div class="eyebrow"><span class="eyebrow-dot"></span> YOUR MONEY, WITH MORE MEANING</div>
+          <h1>Small steps today.<br><span class="gradient-text">Stronger finances</span> tomorrow.</h1>
+          <p class="hero-text">A clearer picture of your spending starts here. Track expenses, set thoughtful limits, and make your next money move with confidence.</p>
+          <div class="hero-actions"><button class="btn btn-primary btn-large" id="heroStart">Start tracking free <span>→</span></button><button class="btn btn-outline btn-large" data-scroll="features">Explore features</button></div>
+          <div class="hero-proof"><div class="avatar-stack"><span>J</span><span>M</span><span>A</span></div><div><strong>A little clarity goes a long way.</strong><small>No complicated spreadsheets required.</small></div></div>
+        </div>
+        <div class="hero-visual">
+          <div class="visual-glow"></div>
+          <div class="preview-card">
+            <div class="preview-head"><div><span class="muted small">TOTAL BALANCE</span><h2>₹24,680.00</h2></div><span class="pill pill-green">↗ 8.4%</span></div>
+            <div class="preview-chart"><div class="chart-y"><span>₹8k</span><span>₹6k</span><span>₹4k</span><span>₹2k</span></div><svg viewBox="0 0 360 145" role="img" aria-label="Illustrative spending trend"><defs><linearGradient id="area" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#60a5fa" stop-opacity=".28"/><stop offset="1" stop-color="#60a5fa" stop-opacity="0"/></linearGradient></defs><path d="M0 104 C22 88 30 92 49 80 S81 95 100 65 S133 70 150 51 S183 72 201 48 S232 63 251 33 S282 53 302 28 S335 34 360 12 L360 145 L0 145Z" fill="url(#area)"/><path d="M0 104 C22 88 30 92 49 80 S81 95 100 65 S133 70 150 51 S183 72 201 48 S232 63 251 33 S282 53 302 28 S335 34 360 12" fill="none" stroke="#3b82f6" stroke-width="3" stroke-linecap="round"/></svg></div>
+            <div class="preview-months"><span>Jan</span><span>Feb</span><span>Mar</span><span>Apr</span><span>May</span><span>Jun</span></div>
+            <div class="preview-divider"></div><div class="preview-bottom"><div class="preview-icon purple">↗</div><div><strong>Monthly insight</strong><small>You're building better habits.</small></div><span class="mini-arrow">↗</span></div>
+          </div>
+          <div class="floating-note note-one"><span class="note-icon green">✓</span><div><strong>Budget on track</strong><small>Food & dining</small></div></div>
+          <div class="floating-note note-two"><span class="note-icon blue">↘</span><div><strong>₹1,240 saved</strong><small>vs. last month</small></div></div>
+        </div>
+      </div>
+      <div class="trust-strip"><span>MADE FOR EVERYDAY DECISIONS</span><span>Track clearly</span><span>Plan confidently</span><span>Grow steadily</span></div>
+      <section id="features" class="section wrap"><div class="section-heading"><div class="eyebrow">LESS GUESSING, MORE GROWING</div><h2>Everything you need to feel<br>good about your money.</h2><p>Simple tools that turn everyday transactions into a more useful financial picture.</p></div>
+        <div class="feature-grid">
+          <article class="feature-card"><div class="feature-icon blue">◫</div><h3>One clear dashboard</h3><p>See your spending, budgets, and recent activity in one calm, organized place.</p></article>
+          <article class="feature-card"><div class="feature-icon violet">◔</div><h3>Spending insights</h3><p>Understand which categories take the biggest share of your money.</p></article>
+          <article class="feature-card"><div class="feature-icon green">⌁</div><h3>Thoughtful limits</h3><p>Set daily, weekly, monthly, and yearly budgets with helpful alerts.</p></article>
+          <article class="feature-card"><div class="feature-icon orange">↗</div><h3>Plan what comes next</h3><p>Use past activity to estimate spending and make room for savings goals.</p></article>
+        </div>
+      </section>
+      <section class="how-section"><div class="wrap"><div class="section-heading"><div class="eyebrow">A SIMPLE ROUTINE</div><h2>Money clarity in three steps.</h2></div><div class="steps-grid"><div class="step"><span>01</span><h3>Log your spending</h3><p>Add an expense in seconds and give it a category.</p></div><div class="step"><span>02</span><h3>Set your guardrails</h3><p>Choose limits that fit your real life and your priorities.</p></div><div class="step"><span>03</span><h3>Learn and adjust</h3><p>Use trends and forecasts to make your next decision easier.</p></div></div></div></section>
+      <section class="cta-section wrap"><div><div class="eyebrow">YOUR NEXT CHAPTER STARTS SMALL</div><h2>Make every rupee more intentional.</h2><p>Build a money habit that works one day at a time.</p></div><button class="btn btn-white btn-large" id="ctaStart">Create your free account →</button></section>
+      <footer class="footer"><a class="brand" href="#"><span class="brand-mark">S</span><span>Spend<span class="brand-blue">Wise</span></span></a><span>Spend with purpose. Grow with confidence.</span><span>© <span id="year"></span> SpendWise · Prototype</span></footer>
+    </section>
+
+    <section id="authPage" class="page auth-page hidden"><div class="auth-card"><button class="back-link" data-page="landing">← Back to home</button><div class="auth-logo"><span class="brand-mark">S</span></div><h1 id="authTitle">Welcome back</h1><p id="authSubtitle">Log in to pick up where you left off.</p><form id="authForm"><label id="nameLabel" class="hidden">Your name<input id="authName" autocomplete="name" placeholder="e.g. Alex Morgan"></label><label>Email address<input id="authEmail" type="email" autocomplete="email" placeholder="you@example.com" required></label><label>Password<input id="authPassword" type="password" autocomplete="current-password" minlength="6" placeholder="At least 6 characters" required></label><p id="authError" class="form-error" role="alert"></p><button id="authSubmit" class="btn btn-primary btn-full" type="submit">Log in</button></form><p class="auth-switch"><span id="authSwitchText">New to SpendWise?</span> <button id="authSwitch">Create an account</button></p><p class="demo-note">Prototype note: demo accounts are saved only in this browser.</p></div></section>
+
+    <section id="appPage" class="page app-page hidden">
+      <div class="app-shell">
+        <div class="page-header"><div><div class="eyebrow">YOUR MONEY AT A GLANCE</div><h1 id="pageTitle">Dashboard</h1><p id="pageSubtitle">A little clarity for your everyday decisions.</p></div><div class="header-tools"><span class="date-label" id="todayLabel"></span><button class="btn btn-primary" id="quickAdd">＋ Add expense</button></div></div>
+        <section id="dashboardView" class="view">
+          <div class="summary-grid">
+            <article class="summary-card"><div class="summary-top"><span>Total spent this month</span><span class="summary-icon blue">↗</span></div><strong id="totalSpent">₹0</strong><small><span class="trend neutral" id="spentTrend">●</span> <span id="spentTrendText">Your spending at a glance</span></small></article>
+            <article class="summary-card"><div class="summary-top"><span>Monthly budget left</span><span class="summary-icon green">◉</span></div><strong id="budgetLeft">₹0</strong><small id="budgetLeftText">Set a budget to get started</small></article>
+            <article class="summary-card"><div class="summary-top"><span>Daily average</span><span class="summary-icon violet">⌁</span></div><strong id="dailyAverage">₹0</strong><small>Based on this month's activity</small></article>
+            <article class="summary-card"><div class="summary-top"><span>Forecast this month</span><span class="summary-icon orange">◷</span></div><strong id="forecast">₹0</strong><small>Estimate based on current pace</small></article>
+          </div>
+          <div class="dashboard-grid"><article class="panel panel-wide"><div class="panel-heading"><div><h2>Spending overview</h2><p>How your expenses move through the month</p></div><select id="overviewRange" aria-label="Chart range"><option value="6">Last 6 months</option><option value="3">Last 3 months</option></select></div><div class="chart-wrap"><canvas id="trendChart"></canvas></div></article><article class="panel"><div class="panel-heading"><div><h2>Where it goes</h2><p>Spending by category</p></div></div><div class="chart-wrap donut-wrap"><canvas id="categoryChart"></canvas></div><div id="categoryLegend" class="category-legend"></div></article></div>
+          <div class="bottom-grid"><article class="panel"><div class="panel-heading"><div><h2>Budget pulse</h2><p>How close you are to your limits</p></div><button class="text-button" data-page="budgets">Manage budgets →</button></div><div id="budgetPulse" class="budget-pulse"></div></article><article class="panel"><div class="panel-heading"><div><h2>Recent activity</h2><p>Your latest transactions</p></div><button class="text-button" data-page="transactions">View all →</button></div><div id="recentList" class="transaction-list"></div></article></div>
+          <div class="quote-bar"><span class="quote-mark">“</span><div><strong>Small steps, repeated daily, create lasting change.</strong><small>Your money journey is progress, not perfection.</small></div><span class="quote-spark">✦</span></div>
+        </section>
+
+        <section id="transactionsView" class="view hidden"><div class="panel"><div class="panel-heading transactions-heading"><div><h2>All transactions</h2><p>Keep track of where your money goes.</p></div><button class="btn btn-primary" id="addTransaction">＋ Add transaction</button></div><div class="filter-row"><input id="transactionSearch" placeholder="Search transactions…" aria-label="Search transactions"><select id="categoryFilter" aria-label="Filter by category"><option value="">All categories</option></select><select id="periodFilter" aria-label="Filter by period"><option value="all">All time</option><option value="month">This month</option><option value="week">This week</option></select></div><div class="table-scroll"><table><thead><tr><th>Transaction</th><th>Category</th><th>Date</th><th>Payment</th><th class="align-right">Amount</th><th></th></tr></thead><tbody id="transactionRows"></tbody></table></div><p id="emptyTransactions" class="empty-state hidden">No transactions yet. Add your first expense to get started.</p></div></section>
+
+        <section id="budgetsView" class="view hidden"><div class="budget-intro"><div><h2>Give your money a plan.</h2><p>Choose a limit that helps you stay intentional, not restricted.</p></div><button class="btn btn-primary" id="addBudget">＋ Set a budget</button></div><div id="budgetCards" class="budget-grid"></div><div class="panel alert-panel"><div class="panel-heading"><div><h2>Budget alerts</h2><p>Friendly nudges when spending approaches a limit.</p></div></div><div id="alertsList"></div></div></section>
+
+        <section id="analyticsView" class="view hidden"><div class="insight-grid"><article class="panel"><div class="panel-heading"><div><h2>Category breakdown</h2><p>Understand your biggest spending areas.</p></div></div><div class="chart-wrap analytics-donut"><canvas id="analyticsCategoryChart"></canvas></div></article><article class="panel"><div class="panel-heading"><div><h2>Monthly forecast</h2><p>A simple projection from this month's pace.</p></div></div><div class="forecast-box"><span class="forecast-icon">✦</span><div class="muted">Estimated month-end spending</div><strong id="analyticsForecast">₹0</strong><p id="forecastMessage">Add transactions to build a useful estimate.</p></div><div id="insightNotes" class="insight-notes"></div></article></div><div class="panel goals-panel"><div class="panel-heading"><div><h2>Savings goals</h2><p>Give your next milestone a name.</p></div><button class="btn btn-primary" id="addGoal">＋ Add a goal</button></div><div id="goalCards" class="goal-grid"></div></div></section>
+
+        <section id="reportsView" class="view hidden"><div class="settings-grid"><article class="panel"><div class="panel-heading"><div><h2>Reports & exports</h2><p>Your data, ready when you need it.</p></div></div><div class="export-option"><span class="export-icon blue">▤</span><div><strong>Print / save as PDF</strong><small>Open your browser's print dialog to save a report as PDF.</small></div><button class="btn btn-outline" id="exportPdf">Export PDF</button></div><div class="export-option"><span class="export-icon green">{ }</span><div><strong>CSV transactions</strong><small>Download a spreadsheet-friendly transaction report.</small></div><button class="btn btn-outline" id="exportCsv">Export CSV</button></div><div class="export-option"><span class="export-icon violet">↓</span><div><strong>Backup your data</strong><small>Download your local data as a JSON backup.</small></div><button class="btn btn-outline" id="exportJson">Backup</button></div></article><article class="panel"><div class="panel-heading"><div><h2>Preferences</h2><p>Make SpendWise feel like yours.</p></div></div><form id="settingsForm" class="settings-form"><label>Display name<input id="profileName" placeholder="Your name"></label><label>Currency<select id="currencySetting"><option value="INR">Indian Rupee (₹ INR)</option><option value="USD">US Dollar ($ USD)</option><option value="GBP">British Pound (£ GBP)</option><option value="EUR">Euro (€ EUR)</option></select></label><button class="btn btn-primary" type="submit">Save preferences</button></form><div class="danger-zone"><div><strong>Reset prototype data</strong><small>Clears locally stored transactions, budgets, goals, and demo accounts.</small></div><button id="clearData" class="btn btn-danger">Reset data</button></div><div class="signout-row"><div><strong id="signedInAs">Signed in</strong><small>Demo account on this browser</small></div><button id="signOut" class="btn btn-outline">Sign out</button></div></article></div></section>
+      </div>
+    </section>
+  </main>
+
+  <dialog id="transactionDialog" class="modal"><form id="transactionForm" method="dialog"><div class="modal-heading"><div><h2 id="transactionModalTitle">Add transaction</h2><p>Every little detail helps tell the story.</p></div><button type="button" class="close-modal" data-close="transactionDialog">×</button></div><input id="transactionId" type="hidden"><label>Description<input id="expenseDescription" required maxlength="80" placeholder="e.g. Lunch with friends"></label><div class="form-two"><label>Amount<input id="expenseAmount" type="number" required min="1" step=".01" placeholder="500"></label><label>Date<input id="expenseDate" type="date" required></label></div><div class="form-two"><label>Category<select id="expenseCategory" required></select></label><label>Payment method<select id="expenseMethod"><option>UPI</option><option>Debit card</option><option>Credit card</option><option>Cash</option><option>Bank transfer</option></select></label></div><label>Note (optional)<input id="expenseNote" maxlength="120" placeholder="Add a little context"></label><p id="transactionError" class="form-error"></p><div class="modal-actions"><button type="button" class="btn btn-outline" data-close="transactionDialog">Cancel</button><button type="submit" class="btn btn-primary">Save transaction</button></div></form></dialog>
+
+  <dialog id="budgetDialog" class="modal"><form id="budgetForm" method="dialog"><div class="modal-heading"><div><h2>Set a budget</h2><p>Pick a timeframe and a limit that suits you.</p></div><button type="button" class="close-modal" data-close="budgetDialog">×</button></div><label>Budget name<input id="budgetName" required placeholder="e.g. Food & dining"></label><div class="form-two"><label>Timeframe<select id="budgetPeriod"><option value="day">Daily</option><option value="week">Weekly</option><option value="month" selected>Monthly</option><option value="year">Yearly</option></select></label><label>Limit amount<input id="budgetLimit" type="number" min="1" required placeholder="5000"></label></div><label>Category<select id="budgetCategory"></select></label><div class="modal-actions"><button type="button" class="btn btn-outline" data-close="budgetDialog">Cancel</button><button type="submit" class="btn btn-primary">Save budget</button></div></form></dialog>
+
+  <dialog id="goalDialog" class="modal"><form id="goalForm" method="dialog"><div class="modal-heading"><div><h2>Create a savings goal</h2><p>Big plans begin with a first step.</p></div><button type="button" class="close-modal" data-close="goalDialog">×</button></div><label>Goal name<input id="goalName" required placeholder="e.g. New laptop"></label><div class="form-two"><label>Target amount<input id="goalTarget" type="number" min="1" required placeholder="60000"></label><label>Already saved<input id="goalSaved" type="number" min="0" value="0" required></label></div><label>Target date<input id="goalDate" type="date"></label><div class="modal-actions"><button type="button" class="btn btn-outline" data-close="goalDialog">Cancel</button><button type="submit" class="btn btn-primary">Save goal</button></div></form></dialog>
+
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
